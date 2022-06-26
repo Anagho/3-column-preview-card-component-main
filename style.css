@@ -1,0 +1,155 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* Variables */
+:root {
+  /* Primary Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Paragraph color */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* Background, headings, buttons - color */
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --body-font: 15px;
+}
+
+/* Pre CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--body-font);
+  background-color: var(--very-light-gray);
+}
+
+/* Reusable CSS */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-weight: 400;
+  padding: 0.7rem 2rem;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  color: #fff !important;
+  background: transparent;
+  outline: 2px solid #fff;
+}
+
+/* Main Area */
+#main {
+  height: 100vh;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 15px;
+  width: 100%;
+}
+
+#main .grid {
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 15px;
+}
+
+.card > div {
+  color: #fff;
+  display: grid;
+  justify-items: start;
+  row-gap: 5rem;
+  padding: 2.5rem;
+}
+
+.details {
+  display: grid;
+  row-gap: 1em;
+}
+
+.details img {
+  width: 3.2rem;
+}
+
+.text-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+.text-body {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  font-size: 12px;
+  line-height: 1.9;
+  font-weight: 100;
+}
+
+#sedan {
+  background: var(--bright-orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#suvs {
+  background: var(--dark-cyan);
+}
+
+#luxury {
+  background: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#sedan .btn {
+  color: var(--bright-orange);
+}
+
+#suvs .btn {
+  color: var(--dark-cyan);
+}
+
+#luxury .btn {
+  color: var(--very-dark-cyan);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 740px) {
+  .container {
+    display: block;
+    margin: 30px auto;
+  }
+  #main {
+    max-width: 740px;
+  }
+  #main .grid {
+    grid-template-columns: none;
+  }
+}
