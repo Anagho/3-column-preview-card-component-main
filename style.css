@@ -144,12 +144,22 @@ body {
 @media screen and (max-width: 740px) {
   .container {
     display: block;
-    margin: 30px auto;
+    margin: 4rem auto;
   }
   #main {
     max-width: 740px;
   }
   #main .grid {
     grid-template-columns: none;
+  }
+
+  #sedan {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+
+  #luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
   }
 }
