@@ -148,6 +148,7 @@ body {
   }
   #main {
     max-width: 740px;
+    padding-bottom: 10px;
   }
   #main .grid {
     grid-template-columns: none;
