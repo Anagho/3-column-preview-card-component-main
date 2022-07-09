@@ -148,9 +148,26 @@ body {
   }
   #main {
     max-width: 740px;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   #main .grid {
     grid-template-columns: none;
+  }
+
+  #sedan {
+    background: var(--bright-orange);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+
+  #suvs {
+    background: var(--dark-cyan);
+  }
+
+  #luxury {
+    background: var(--very-dark-cyan);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
